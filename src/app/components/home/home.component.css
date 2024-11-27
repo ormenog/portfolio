@@ -266,7 +266,30 @@ h2{
   border-radius: 0.5rem;
 }
 
+.project-card img{
+  background-color: grey;
+  width: 91%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  justify-content: center;
+}
 
+.project-card h4{
+  width: 91%;
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: .7rem;
+}
+
+.project-card p{
+  width: 91%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 1.3rem;
+}
 
 .contact{
   width: 95%;
