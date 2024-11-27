@@ -1,0 +1,154 @@
+header{
+  background-color: #ffffffdc;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  top: 0;
+  z-index: 10;
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-h{
+  width: 60%;
+  background-color: #ffffff34;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container-h .left p,
+.container-h .right ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.container-h .left p {
+  justify-content: flex-start;
+  font-size: 24px;
+  font-weight:600;
+  color: rgba(0, 0, 0, 0.822);
+  padding-left: 10px;
+}
+
+.container-h .right ul {
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  font-size: 19px;
+  color: rgba(105, 105, 105, 0.822);
+  padding: .7rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+a:hover{
+  background-color: #9173613d;
+  border-radius: 10px;
+}
+
+mat-icon{
+  margin-right: .2rem;
+  font-size: 22px;
+}
+
+.menu{
+  visibility: hidden;
+  display: none;
+  cursor: pointer;
+}
+
+.menu mat-icon, .close mat-icon{
+  font-size: 25px;
+}
+
+.close:hover{
+  border-radius: 55px;
+}
+
+.menu:hover {
+  background-color: #9173613d;
+  border-radius: 55px;
+}
+
+.dropdown-menu {
+ position:absolute;
+ background-color: #ffffffe3;
+ margin: 0;
+ top: 100%;
+ list-style: none;
+ width: 100%;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  margin: 1rem 0;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: rgba(105, 105, 105, 0.822);
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+/*   z-index: 1000;
+ */}
+
+.dropdown-menu a:hover {
+  background-color: #9173613d;
+  border-radius: 4px;
+}
+
+
+@media (max-width: 1200px) {
+  .container-h {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  header{
+    width: 100%;
+  }
+
+  .home,.about, .project, .contact{
+    visibility: hidden;
+    display: none;
+  }
+
+  .menu {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+}
