@@ -63,7 +63,6 @@ h1{
 }
 
 .about{
-  background-color: red;
   width: 95%;
   margin: 0 auto;
   /* padding-top: 1rem; */
@@ -93,9 +92,8 @@ h2{
 }
 
 .container-about{
-  background-color: aqua;
   width: 90%;
-  /* background-color: white; */
+  background-color: white;
   border-radius: 1rem;
   text-align: center;
   margin: 0 auto;
