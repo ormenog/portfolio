@@ -1,0 +1,138 @@
+footer{
+  margin-top: 2rem;
+  width: 100%;
+  background-color: black;
+  height: auto;
+  color: white;
+}
+
+.container-footer {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: .5rem;
+}
+
+.left-column{
+  width: 46%;
+  margin-top:2rem;
+  margin-bottom: 1.5rem;
+}
+
+.left-column p{
+  font-size: 19px;
+  padding-bottom:.7rem;
+}
+
+.left-column .images-container{
+  display: flex;
+  margin-bottom: 1rem
+}
+
+.left-column .images-container img{
+  width: 24px;
+  height: auto;
+  filter: invert(1); /* Inverte i colori: il nero diventa bianco */
+}
+
+.left-column .images-container button{
+  margin-right: .8rem;
+  border: none;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.right-column{
+  width: 46%;
+  margin-top:2rem;
+  margin-bottom: 1.5rem;
+  font-size: 19px;
+}
+
+.right-column p{
+  font-weight: 599;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  margin-bottom: 1rem;
+}
+
+.right-column a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding: 2px 4px;
+  transition: padding 0.3s ease; /* Transizione del padding */
+}
+
+.right-column a:hover {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.right-column a::before,
+.right-column a::after {
+  content: ''; /* Crea una linea */
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px; /* Spessore della linea */
+  background-color: white;
+  transform: scaleX(0); /* Linee inizialmente nascoste */
+  transform-origin: center;
+  transition: transform 0.3s ease; /* Transizione per il movimento delle linee */
+}
+
+.right-column a::before {
+  top: -3px; /* Linea sopra il testo */
+}
+
+.right-column a::after {
+  bottom: -3px; /* Linea sotto il testo */
+}
+
+.right-column a:hover::before,
+.right-column a:hover::after {
+  transform: scaleX(1); /* Espande le linee in orizzontale */
+}
+
+.diritti{
+  width: 95%;
+  font-size: 15px;
+  border-top: 2px solid rgba(255, 255, 255, 0.171);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+
+@media (max-width: 1200px) {
+  .container-footer {
+    width: 95%;
+  }
+}
+
+@media (max-width: 390px) {
+  .container-footer {
+    flex-direction: column;
+    padding-top: .5rem;
+  }
+
+  .right-column, .left-column {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+
+}
+
